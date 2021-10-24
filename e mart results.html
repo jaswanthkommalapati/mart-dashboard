@@ -1,0 +1,123 @@
+<html>
+<head>
+<link rel="stylesheet" href="results.css">
+<style type="text/css"src="results.css">
+body {
+  background: aquamarine;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+section {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+}
+
+.poll-option {
+  margin-bottom: 25px;
+}
+
+span.poll-option__label {
+  font-weight: bold;
+}
+
+table.poll-option__result {
+  width: 100%;
+  
+  tr, td {
+    padding: 0;
+  }
+  
+  td:nth-child(odd) {
+    width: 40px;
+  }
+  
+  td:nth-child(even) {
+    border: 0;
+    height: 100%;
+    position: relative;
+    vertical-align: center;
+    width: 100%;
+  }
+  
+  td:first-child {
+    padding-right: 20px;
+  }
+  
+  td:last-child {
+    padding-left: 20px;
+  }
+  
+  span {
+    border-radius: 3px;
+    display: block;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  span:first-child {
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  span:last-child {
+    background: aliceblue;
+    background-image: linear-gradient(to right, #ff5a00, #e3a417);
+  }
+}
+</style>
+</head>
+
+<body>
+
+
+<section>
+  <h1>What is the meaning of life? </h1>
+  <div class="poll-option">
+    <span class="poll-option__label">Option 1</span>
+    <table class="poll-option__result">
+      <tr>
+        <td>200</td>
+        <td>
+          <span></span>
+          <span style="width: 25%;"></span>
+        </td>
+        <td>25%</td>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="poll-option">
+    <span class="poll-option__label">Option 2</span>
+    <table class="poll-option__result">
+      <tr>
+        <td>123</td>
+        <td>
+          <span></span>
+          <span style="width: 53%;"></span>
+        </td>
+        <td>53%</td>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="poll-option">
+    <span class="poll-option__label">Option 3</span>
+    <table class="poll-option__result">
+      <tr>
+        <td>547</td>
+        <td>
+          <span></span>
+          <span style="width: 87%;"></span>
+        </td>
+        <td>87%</td>
+      </tr>
+    </table>
+  </div>
+</section>
+</body>
+</html>
